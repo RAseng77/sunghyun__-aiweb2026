@@ -189,6 +189,15 @@ section p {
 }
 
 /* ============ Content (contents.md 인라인 렌더) ============ */
+.content {
+  background: var(--card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
 .content zero-md {
   display: block;
   color: var(--ink);
@@ -291,6 +300,15 @@ section p {
 }
 
 /* ============ Comments ============ */
+.comments {
+  background: var(--card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.8rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
 .comments .comments-note {
   font-size: 0.9rem;
   margin: 0 0 1.5rem;
@@ -305,6 +323,7 @@ footer {
   border-top: 1px solid var(--border);
   padding: 2rem 0 3rem;
   text-align: center;
+  background: linear-gradient(180deg, transparent, rgba(34, 211, 238, 0.05));
 }
 footer p {
   color: var(--muted);
@@ -312,7 +331,7 @@ footer p {
   margin: 0;
 }
 footer a {
-  color: var(--accent2);
+  color: var(--accent);
   text-decoration: none;
 }
 footer a:hover {
@@ -324,4 +343,5 @@ footer a:hover {
   .demo-card { margin-top: -1.5rem; border-radius: 8px; }
   .cta { padding: 1rem; flex-direction: column; }
   .btn { justify-content: center; width: 100%; }
+  .content, .comments { padding: 1.3rem 1.2rem; }
 }
